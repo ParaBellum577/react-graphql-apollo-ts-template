@@ -9,6 +9,8 @@ import {
 } from "@apollo/client";
 import './index.scss';
 
+// TODO change uri to graphql server url
+
 const client: ApolloClient<NormalizedCacheObject> = new ApolloClient({
   uri: "https://48p1r2roz4.sse.codesandbox.io",
   cache: new InMemoryCache(),

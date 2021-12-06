@@ -38,19 +38,5 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
 </body>
-<script>
-  const isSafari = !!navigator.vendor.match(/apple/i);
-  if ('serviceWorker' in navigator && !isSafari) {
-    const url = window.location.origin + '/firebase-messaging-sw.js';
-    navigator.serviceWorker
-      .register(url)
-      .then((registration) => {
-        console.log('Registration successful, scope is:', registration.scope);
-      })
-      .catch((err) => {
-        console.log('Service worker registration failed, error:', err);
-      });
-  }
-</script>
 
 </html>

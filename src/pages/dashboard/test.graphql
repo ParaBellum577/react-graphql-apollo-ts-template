@@ -1,0 +1,6 @@
+query Data($currency: String!) {
+    rates(currency: $currency) {
+      currency
+      rate
+  }
+}

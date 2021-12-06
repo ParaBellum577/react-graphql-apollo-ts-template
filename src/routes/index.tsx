@@ -11,7 +11,7 @@ const MainRouter: React.FC<RouterProps> = ({isSignedIn}) => {
 
   const rootRedirect = useMemo(() => {
     if (isSignedIn) {
-      return '/start'
+      return '/dashboard'
     }
     return '/login'
   }, [isSignedIn]);
